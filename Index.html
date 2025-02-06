@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salem EV</title>
+  <link rel="icon" href="logo.jpg" type="image/jpeg">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      width: 80%;
+      margin: 20px auto;
+      background-color: white;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    .dashboard {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+    .card {
+      background-color: #e1f5fe;
+      padding: 20px;
+      text-align: center;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .card h2 {
+      margin: 0;
+      color: #0277bd;
+    }
+    .card p {
+      font-size: 24px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Welcome to Salem EV</h1>
+    <div class="dashboard">
+      <div class="card">
+        <h2>Battery Percentage</h2>
+        <p id="battery-percentage">80%</p>
+      </div>
+      <div class="card">
+        <h2>Kilometers Traveled</h2>
+        <p id="km-travel">150 km</p>
+      </div>
+      <div class="card">
+        <h2>Temperature</h2>
+        <p id="temperature">28°C</p>
+      </div>
+      <div class="card">
+        <h2>Remaining Mileage</h2>
+        <p id="remaining-mileage">200 km</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
